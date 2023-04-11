@@ -1,6 +1,6 @@
 package application;
 
-public class GenericPlayer {
+//public class GenericPlayer {
 	import javafx.event.EventHandler;
 	import javafx.scene.input.KeyCode;
 	import javafx.scene.input.KeyEvent;

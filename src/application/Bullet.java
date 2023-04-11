@@ -36,6 +36,7 @@ public class Bullet {
 		}
 		return false;
 	}
+	
 }
 
 ////public class Bullet {
