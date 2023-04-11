@@ -19,7 +19,7 @@ public abstract class GenericEnemy {
 	private Rectangle graphic;
 	private double hp;
 	private boolean hit;
-	private boolean border;
+	private boolean border = false;
 
 	public GenericEnemy(int x, int y, int w, int h, int hp) {
 		xPos = x;
@@ -42,6 +42,9 @@ public abstract class GenericEnemy {
 	}
 	public boolean border() {
 		if (xPos <= 0) {
+			border = true;
+		}
+		if (xPos >= 600) {
 			border = true;
 		}
 		return border;

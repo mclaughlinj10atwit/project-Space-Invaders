@@ -76,32 +76,11 @@ public class Main extends Application {
 
 			p++;
 		}
-//		AlienInstructions s = new AlienInstructions((int)Alien.getTranslateX() + 10 - 50 * h, (int)Alien.getTranslateY() - 100 ,5,20);
-//		root.getChildren().addAll(Alien.Enemymovement1(enemy));
-		// Rectangle r = new Rectangle(100,50,50,50);
-		// root.getChildren().add(Alien.Enemymovement(s));
-		// root.getChildren().add(shoot(Alien));
-//		 TranslateTransition translateTransition = new TranslateTransition();
-//		 translateTransition.setNode(r);
-//		 translateTransition.setDuration(Duration.seconds(4));
-//		
-//		translateTransition.setAutoReverse(true);
-//			translateTransition.setToX( x + 1);
-//
-//		
-//		translateTransition.setFromX(400);
-//
-//		
-//		translateTransition.setCycleCount(Transition.INDEFINITE);
-//		translateTransition.play();
-//
-//		root.getChildren().add(r);
 
 		AnimationTimer timer = new AnimationTimer() {
 
 			@Override
 			public void handle(long arg0) {
-				enemyShoot();
 
 			}
 		};
@@ -130,126 +109,9 @@ public class Main extends Application {
 
 	}
 
-//	public void Enemymovement1(Rectangle Alien) {
-//		TranslateTransition translateTransition = new TranslateTransition();
-//		translateTransition.setNode(Alien);
-//		translateTransition.setDuration(Duration.seconds(1));
-//
-//		translateTransition.setToY(y - 60);
-//
-//		translateTransition.setFromX(50);
-//
-//		translateTransition.setCycleCount(1);
-//		translateTransition.play();
-//
-//	}
-
-//	public void shoot(AlienInstructions alien) {
-//		alive = true;
-//		int l = 0;
-//		int h = 0;
-//		while(alive == true) {
-//		AlienInstructions s = new AlienInstructions((int)alien.getTranslateX() + 10 - 50 * h, (int)alien.getTranslateY() - 100 ,5,20);
-//		enemy.add(s);
-//	  h++;
-//	Random r = new Random();
-//	int low = 1;
-//	int high = 100;
-//	int result = r.nextInt(high-low)+ low;
-//	if (result < 50) {
-//		
-//	}
-//	else {
-//		s.enemyMovement();
-//	}
-//		if (l == 4) {
-//			alive = false;
-//		}
-//		
-//		l++;
-//		
-//		
-//	//	root.getChildren().add(s);
-//		}
-//		return bullet;
-//		}
-//	
-//	private void enemyShoot() {
-//     enemy.forEach(s ->{
-//    	 s.enemyMovement();
-//     });
-//		
-//		secondstoShoot += 5;
-//		for (int i = 0; i < 20; i++) {
-//					shoot(Alien);
-//			    }
-//
-//			
-//	}
-	public void shoot(ArrayList<Rectangle> allEnemys) {
-		alive = true;
-		int l = 0;
-		int h = 0;
-		while (alive == true) {
-
-//		Bullet s = new Bullet((int)Alien.getTranslateX() + 10 - 100 * h, (int)Alien.getTranslateY() - 100);
-//h++;
-//	
-
-			if (l == 4) {
-				alive = false;
-			}
-
-			l++;
-
-//		root.getChildren().add(s);
-		}
-	}
-
-	private void enemyShoot() {
-//     Alien.getAlien().forEach(s ->{
-//    	 Alien.enemyMovement();
-//     });
-//		
-//		secondstoShoot += 5;
-//		for (int i = 0; i < 20; i++) {
-//					shoot(Alien.getAlien());
-//			    }
-
-	}
-
 	public static void main(String[] args) {
 		launch(args);
 	}
 
-	public void movement(double x) {
-//	 TranslateTransition translateTransition = new TranslateTransition();
-//	 translateTransition.setNode(Alien);
-//	 translateTransition.setDuration(Duration.seconds(4));
-//
-//	 if (x < 290) {
-//		 x = x + 1;
-//   	 translateTransition.setByX(290);
-//
-//		 
-//	 }
-//	
-//	  if (x == 290) {
-//		 x = x -1;
-//   	 translateTransition.setByX(-300);
-//
-//	 }
-//	
-//
-//	 translateTransition.setCycleCount(1);
-//	 translateTransition.play();
-	}
 
-//TranslateTransition translateTransition = new TranslateTransition();
-//translateTransition.setNode(Alien);
-//translateTransition.setDuration(Duration.seconds(4));
-//// translateTransition.setNode(enemyShoot(Alien));
-	public void atBorder() {
-
-	}
 }
